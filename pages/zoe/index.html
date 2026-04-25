@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Zoë — Life in the Atacama</title>
+  <meta name="description" content="Zoë is an autonomous, solar-powered rover built at Carnegie Mellon University to search for microbial life in Chile's Atacama Desert.">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="../../index.html" class="nav-logo">LITA <span>·</span> Life in the Atacama</a>
+    <ul class="nav-links">
+      <li><a href="../atacama/index.html">The Desert</a></li>
+      <li><a href="index.html" class="active">Meet Zoë</a></li>
+      <li><a href="../expeditions/index.html">Expeditions</a></li>
+      <li><a href="../gallery/index.html">Gallery</a></li>
+      <li><a href="../archive/index.html">Archive</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-color:#1C2028;"></div>
+  <div class="container page-hero-content">
+    <span class="section-label">The Robot</span>
+    <h1>Meet Zoë</h1>
+    <p class="lead">An autonomous, solar-powered rover built to find life where 
+    almost nothing survives — and to prove that robots could do the same on Mars.</p>
+  </div>
+</div>
+
+<!-- Anatomy -->
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="gap:4rem; align-items:center;">
+      <div class="observe">
+        <span class="section-label">Anatomy</span>
+        <h2>How Zoë is built</h2>
+        <p>
+          Zoë is about the size of a small car — roughly 2.5 meters long and 
+          2 meters wide — with a flat 3 m² solar array lying across her back 
+          like a sunbathing lizard. That array, made of high-efficiency gallium 
+          arsenide cells, is her only power source. No gasoline, no battery 
+          swap. If the sun shines, Zoë runs.
+        </p>
+        <p>
+          Her four wheels are each independently driven, and a passive joint 
+          at the front axle lets her flex and roll over uneven ground — similar 
+          to a wagon hitch. All her computers, electronics, and batteries are 
+          sealed in a single body mounted between the axles, protecting them 
+          from Atacama dust and temperature swings.
+        </p>
+        <table class="glance-table mt-2">
+          <tr><td>Length</td><td>~2.5 m</td></tr>
+          <tr><td>Width</td><td>~1.9 m</td></tr>
+          <tr><td>Mass</td><td>~200 kg</td></tr>
+          <tr><td>Power</td><td>3 m² gallium arsenide solar array</td></tr>
+          <tr><td>Drive</td><td>Four-wheel drive, passive front articulation</td></tr>
+          <tr><td>Navigation</td><td>Stereo vision, optical flow, autonomous path planning</td></tr>
+        </table>
+      </div>
+      <div class="observe">
+        <figure class="inline-img" style="margin:0;">
+          <div class="img-placeholder" data-label="Zoë — Annotated Overview" style="aspect-ratio:4/3;"></div>
+          <figcaption>Zoë in the Atacama Desert. [SOURCE: Replace with annotated rover 
+          photo — label solar array, instrument mast, wheel articulation joint, 
+          science payload bay]. Credit: LITA Project / CMU.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Autonomy -->
+<section class="section section--salt">
+  <div class="container">
+    <div class="observe mb-2">
+      <span class="section-label">How She Drives</span>
+      <h2>Autonomous navigation</h2>
+      <p class="lead">
+        A rover on Mars can't be joysticked in real time. Radio signals take 
+        up to 24 minutes to travel one way. Zoë was built to solve this — 
+        to drive for kilometers across rough terrain using only what her own 
+        cameras could see.
+      </p>
+    </div>
+    <div class="grid-2 observe" style="gap:4rem;">
+      <div>
+        <p>
+          Zoë uses a pair of stereo cameras mounted at the front to build a 
+          3D picture of the terrain ahead. An obstacle-detection algorithm 
+          identifies rocks, slopes, and soft soil that could trap or tip the 
+          rover. A path planner then finds a safe route toward the target waypoint.
+        </p>
+        <p>
+          A second camera, pointing downward at an angle, measures optical 
+          flow — the apparent movement of the ground as Zoë drives — to 
+          estimate her speed and position even without GPS. On Mars there is 
+          no GPS network; position must be computed from wheel odometry 
+          and camera data combined.
+        </p>
+        <p>
+          [PLACEHOLDER: Additional detail on the autonomy algorithms — 
+          source from design documents and technical papers. Cover: 
+          waypoint navigation, science autonomy (deciding when to stop 
+          and measure), long-traverse strategy.]
+        </p>
+      </div>
+      <div>
+        <figure class="inline-img" style="margin:0;">
+          <div class="img-placeholder" data-label="Zoë Autonomy — Stereo Vision" style="aspect-ratio:4/3;"></div>
+          <figcaption>[SOURCE: Replace with image of Zoë's stereo camera view 
+          or autonomy visualization]. Credit: LITA Project / CMU.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Instruments -->
+<section class="section">
+  <div class="container">
+    <div class="observe mb-3">
+      <span class="section-label">Science Payload</span>
+      <h2>The instruments</h2>
+      <p class="lead">
+        Zoë's instruments evolved across five deployments. Each was chosen 
+        to detect different signs of life — or the conditions that support it.
+      </p>
+    </div>
+
+    <div class="grid-3 observe">
+
+      <div class="card">
+        <div class="card-img img-placeholder" data-label="Fluorescence Imager" style="height:180px;"></div>
+        <div class="card-body">
+          <span class="card-eyebrow">Life Detection</span>
+          <h3>Fluorescence Imager</h3>
+          <p>
+            Think black light. The fluorescence imager shines ultraviolet light 
+            on a soil sample and photographs what glows back. Living organisms 
+            fluoresce under UV in ways that rocks don't. Used in every deployment 
+            to scan for biological material along the traverse.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img img-placeholder" data-label="Spectrometer" style="height:180px;"></div>
+        <div class="card-body">
+          <span class="card-eyebrow">Mineralogy</span>
+          <h3>Spectrometers</h3>
+          <p>
+            A spectrometer identifies materials by the light they reflect — 
+            each mineral and organic compound has a distinctive spectral 
+            fingerprint. Zoë carried infrared and, in later deployments, 
+            Raman spectrometers to characterize soil and rock composition.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img img-placeholder" data-label="Honeybee Drill" style="height:180px;"></div>
+        <div class="card-body">
+          <span class="card-eyebrow">Subsurface Access · 2013–2018</span>
+          <h3>The Honeybee Drill</h3>
+          <p>
+            For the final deployments, Zoë gained a one-meter autonomous 
+            drill from Honeybee Robotics. The drill bores into the ground 
+            and brings soil samples to surface-mounted instruments — 
+            LITA's first capability to look for life that's hiding underground.
+          </p>
+          <a href="#drill" style="font-size:0.875rem;">Read more about the drill →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Drill detail -->
+    <div id="drill" class="observe mt-3" style="border-top: 2px solid var(--accent-ochre); padding-top:3rem;">
+      <div class="grid-2" style="gap:4rem; align-items:start;">
+        <div>
+          <span class="section-label">2013–2018</span>
+          <h3>The Honeybee 1-meter drill</h3>
+          <p>
+            Direct evidence of life on Mars, if it exists, is more likely to 
+            be found underground — shielded from UV radiation and temperature 
+            extremes by even a few centimeters of soil. LITA's drill was 
+            designed to prove that a rover could autonomously bore, sample, 
+            and analyze without a human holding the controls.
+          </p>
+          <p>
+            The drill was developed by Honeybee Robotics and integrated onto 
+            Zoë's deck. An auger bit rotates and advances into the ground, 
+            pulling soil chips upward into a collection system. The samples 
+            are then delivered to the spectrometers and fluorescence imager 
+            mounted on the rover.
+          </p>
+          <p>
+            [PLACEHOLDER: Technical detail on drill operations — autonomous 
+            drilling procedure, samples per day, integration with science 
+            payload. Source from design documents and 2013/2015–2018 
+            field reports.]
+          </p>
+          <div class="go-deeper" style="margin-top:2rem;">
+            <div class="go-deeper-label">Go Deeper — Drill Data</div>
+            <h4>Drill operations archive includes:</h4>
+            <ul>
+              <li>Autonomous drill logs from each deployment</li>
+              <li>Sample provenance records (depth, location, date)</li>
+              <li>Instrument readings correlated to drill samples</li>
+            </ul>
+            <a href="../archive/index.html#instruments" class="btn-archive">Browse Instrument Archive</a>
+          </div>
+        </div>
+        <div>
+          <figure class="inline-img" style="margin:0;">
+            <div class="img-placeholder" data-label="Honeybee Drill on Zoë" style="aspect-ratio:3/4;"></div>
+            <figcaption>The 1-meter Honeybee Robotics drill mounted on Zoë's deck. 
+            [SOURCE: Replace with actual drill image]. Credit: LITA Project / CMU.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Hyperion -->
+<section class="section section--dark">
+  <div class="container observe">
+    <span class="section-label">Before Zoë</span>
+    <h2>Hyperion: the predecessor</h2>
+    <div class="grid-2" style="gap:4rem;">
+      <div>
+        <p>
+          Before Zoë, the project used Hyperion — a larger, earlier rover 
+          developed at Carnegie Mellon. Hyperion was deployed to the Atacama 
+          in the first field season (2003) to test individual scientific 
+          instruments and early autonomous navigation software.
+        </p>
+        <p>
+          Hyperion's field results informed every design decision that went 
+          into Zoë. What worked in Pittsburgh didn't always work in a desert 
+          at altitude with temperature swings of 40°C between sunrise and 
+          midday. Zoë incorporated lessons learned.
+        </p>
+        <p>[PLACEHOLDER: Additional detail on Hyperion from source documents.]</p>
+      </div>
+      <div>
+        <figure class="inline-img" style="margin:0;">
+          <div class="img-placeholder" data-label="Hyperion Rover" style="aspect-ratio:4/3;"></div>
+          <figcaption>[SOURCE: Hyperion rover image if available]. Credit: LITA Project / CMU.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© Life in the Atacama Project · Carnegie Mellon University Robotics Institute</span>
+      <a href="../../index.html" style="color:rgba(240,237,232,0.4);">← Home</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/js/shared.js"></script>
+</body>
+</html>

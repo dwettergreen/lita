@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Life in the Atacama</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <style>
+    .filter-bar { display:flex; gap:0.75rem; flex-wrap:wrap; margin-bottom:2rem; }
+    .filter-btn {
+      padding:0.4rem 1rem;
+      border:1px solid var(--border);
+      background:transparent;
+      font-family:var(--font-mono);
+      font-size:0.72rem;
+      letter-spacing:0.1em;
+      text-transform:uppercase;
+      cursor:pointer;
+      transition:all 0.2s;
+      color:var(--text-muted);
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background:var(--accent-ochre);
+      border-color:var(--accent-ochre);
+      color:#fff;
+    }
+    .gallery-caption-overlay {
+      position:absolute; bottom:0; left:0; right:0;
+      padding:0.75rem;
+      background:linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+      color:#fff; font-size:0.72rem;
+      opacity:0; transition:opacity 0.2s;
+    }
+    .gallery-item:hover .gallery-caption-overlay { opacity:1; }
+    .gallery-item { position:relative; }
+  </style>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container">
+    <a href="../../index.html" class="nav-logo">LITA <span>·</span> Life in the Atacama</a>
+    <ul class="nav-links">
+      <li><a href="../atacama/index.html">The Desert</a></li>
+      <li><a href="../zoe/index.html">Meet Zoë</a></li>
+      <li><a href="../expeditions/index.html">Expeditions</a></li>
+      <li><a href="index.html" class="active">Gallery</a></li>
+      <li><a href="../archive/index.html">Archive</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-hero" style="height:320px;">
+  <div class="page-hero-bg" style="background-color:#2C2416;"></div>
+  <div class="container page-hero-content">
+    <span class="section-label">Photography</span>
+    <h1>Gallery</h1>
+    <p class="lead">Curated images from five deployments: the desert, the robot, the team, and the science.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="observe">
+      <div class="filter-bar">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Desert &amp; Landscape</button>
+        <button class="filter-btn">Zoë in the Field</button>
+        <button class="filter-btn">Team &amp; Field Work</button>
+        <button class="filter-btn">Instruments &amp; Science</button>
+        <button class="filter-btn">2003</button>
+        <button class="filter-btn">2004</button>
+        <button class="filter-btn">2005</button>
+        <button class="filter-btn">2013</button>
+        <button class="filter-btn">2015–2018</button>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Placeholder gallery items — replace with real images -->
+        <div class="gallery-item"><div class="img-placeholder" data-label="Atacama Salt Flat · 2005" style="width:100%;height:100%;"></div><div class="gallery-caption-overlay">Atacama salt flat · 2005 · Credit: LITA Project</div></div>
+        <div class="gallery-item" style="grid-row:span 2;"><div class="img-placeholder" data-label="Zoë Traverse · 2013" style="width:100%;height:100%;"></div><div class="gallery-caption-overlay">Zoë on traverse · 2013 · Credit: LITA Project / CMU</div></div>
+        <div class="gallery-item"><div class="img-placeholder" data-label="Desert Landscape · 2003" style="width:100%;height:100%;"></div><div class="gallery-caption-overlay">Desert landscape · 2003</div></div>
+        <div class="gallery-item"><div class="img-placeholder" data-label="Team in Field · 2005" style="width:100%;height:100%;"></div><div class="gallery-caption-overlay">Field team · 2005</div></div>
+        <div class="gallery-item"><div class="img-placeholder" data-label="Zoë Solar Array · 2004" style="width:100%;height:100%;"></div><div class="gallery-caption-overlay">Zoë solar array · 2004</div></div>
+        <div class="gallery-item"><div class="img-placeholder" data-label="Fluorescence Image · 2005" style="width:100%;height:100%;"></div><div class="gallery-caption-overlay">Fluorescence imager result · 2005</div></div>
+        <div class="gallery-item"><div class="img-placeholder" data-label="Atacama Volcano · Altiplano" style="width:100%;height:100%;"></div><div class="gallery-caption-overlay">Altiplano volcano near field site</div></div>
+        <div class="gallery-item"><div class="img-placeholder" data-label="Drill Operation · 2013" style="width:100%;height:100%;"></div><div class="gallery-caption-overlay">Autonomous drilling · 2013</div></div>
+        <div class="gallery-item"><div class="img-placeholder" data-label="Salt Crust · 2015" style="width:100%;height:100%;"></div><div class="gallery-caption-overlay">Salt crust microhabitat · 2015</div></div>
+        <div class="gallery-item"><div class="img-placeholder" data-label="Sunset · Atacama" style="width:100%;height:100%;"></div><div class="gallery-caption-overlay">Sunset over the Atacama</div></div>
+        <div class="gallery-item"><div class="img-placeholder" data-label="Zoë Night Camp" style="width:100%;height:100%;"></div><div class="gallery-caption-overlay">Zoë at field camp overnight</div></div>
+        <div class="gallery-item"><div class="img-placeholder" data-label="Science Team · 2018" style="width:100%;height:100%;"></div><div class="gallery-caption-overlay">Science team · 2018</div></div>
+      </div>
+
+      <div class="mt-3 text-center">
+        <p style="color:var(--text-muted);font-size:0.875rem;">
+          Showing curated selection. The complete image archive contains 100,000+ images.
+        </p>
+        <a href="../archive/index.html#imagery" class="btn btn-primary mt-2">Browse the Full Archive</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© Life in the Atacama Project · Carnegie Mellon University Robotics Institute</span>
+      <a href="../../index.html" style="color:rgba(240,237,232,0.4);">← Home</a>
+    </div>
+  </div>
+</footer>
+<script src="../../assets/js/shared.js"></script>
+</body>
+</html>

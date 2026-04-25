@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Archive — Life in the Atacama</title>
+  <meta name="description" content="The complete LITA data archive: traverse imagery, panoramic mosaics, instrument data, and traverse logs from all five Atacama deployments.">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <style>
+    .archive-nav { display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:3rem; }
+    .archive-nav a {
+      padding:0.5rem 1.25rem;
+      border:1px solid var(--border);
+      font-family:var(--font-mono);
+      font-size:0.75rem;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      color:var(--text-muted);
+      transition: all 0.2s;
+    }
+    .archive-nav a:hover, .archive-nav a.active {
+      background:var(--accent-green);
+      border-color:var(--accent-green);
+      color:#fff;
+      text-decoration:none;
+    }
+    .archive-section { padding-top:3rem; border-top:1px solid var(--border); margin-top:3rem; }
+    .dataset-row { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:1rem; align-items:center; padding:1rem 0; border-bottom:1px solid var(--border); }
+    .dataset-row:last-child { border-bottom:none; }
+    @media(max-width:768px){ .dataset-row { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="../../index.html" class="nav-logo">LITA <span>·</span> Life in the Atacama</a>
+    <ul class="nav-links">
+      <li><a href="../atacama/index.html">The Desert</a></li>
+      <li><a href="../zoe/index.html">Meet Zoë</a></li>
+      <li><a href="../expeditions/index.html">Expeditions</a></li>
+      <li><a href="../gallery/index.html">Gallery</a></li>
+      <li><a href="index.html" class="active">Archive</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-color:#1A231A;"></div>
+  <div class="container page-hero-content">
+    <span class="section-label" style="color:var(--accent-green);">Research Archive</span>
+    <h1>Data Archive</h1>
+    <p class="lead">Sixteen years of field data from five deployments — imagery, 
+    panoramas, instrument readings, and traverse logs — openly available for research.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Overview stats -->
+    <div class="observe mb-3" style="display:grid; grid-template-columns:repeat(4,1fr); gap:2rem; padding:2rem; background:var(--accent-salt);">
+      <div>
+        <div style="font-family:var(--font-display);font-size:2.5rem;color:var(--accent-ochre);line-height:1;">100k+</div>
+        <div style="font-size:0.85rem;color:var(--text-muted);">Traverse images</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:2.5rem;color:var(--accent-ochre);line-height:1;">200+</div>
+        <div style="font-size:0.85rem;color:var(--text-muted);">Panoramic mosaics</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:2.5rem;color:var(--accent-ochre);line-height:1;">5</div>
+        <div style="font-size:0.85rem;color:var(--text-muted);">Deployments archived</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:2.5rem;color:var(--accent-ochre);line-height:1;">Open</div>
+        <div style="font-size:0.85rem;color:var(--text-muted);">Freely available</div>
+      </div>
+    </div>
+    <p style="font-size:0.85rem;color:var(--text-muted);">Note: Archive volume figures are placeholders — to be updated from source inventory.</p>
+
+    <!-- Quick nav -->
+    <nav class="archive-nav observe">
+      <a href="#imagery" class="active">Traverse Imagery</a>
+      <a href="#panoramas">Panoramas</a>
+      <a href="#instruments">Instrument Data</a>
+      <a href="#traverse-logs">Traverse Logs</a>
+      <a href="#downloads">Bulk Downloads</a>
+    </nav>
+
+    <!-- Imagery -->
+    <div id="imagery" class="archive-section observe">
+      <h2>Traverse Imagery</h2>
+      <p>
+        As Zoë drove, her cameras captured a continuous record of the terrain — 
+        both for navigation and science. The image archive is organized by 
+        deployment, then by field day, then by camera and instrument.
+      </p>
+      <p>
+        A few selected images appear in the expedition narratives and gallery. 
+        The complete archive — hundreds of thousands of images — is available 
+        for download and browsing below.
+      </p>
+
+      <table class="archive-table mt-2">
+        <thead>
+          <tr>
+            <th>Deployment</th>
+            <th>Image Count</th>
+            <th>Cameras</th>
+            <th>Access</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="../expeditions/2003.html">2003</a></td>
+            <td><span style="color:var(--text-muted);">[SOURCE NEEDED]</span></td>
+            <td><span class="tag">Navcam</span><span class="tag">Pancam</span></td>
+            <td><a href="#">Browse</a> · <a href="#">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href="../expeditions/2004.html">2004</a></td>
+            <td><span style="color:var(--text-muted);">[SOURCE NEEDED]</span></td>
+            <td><span class="tag">Navcam</span><span class="tag">Pancam</span><span class="tag">Fluorescence</span></td>
+            <td><a href="#">Browse</a> · <a href="#">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href="../expeditions/2005.html">2005</a></td>
+            <td><span style="color:var(--text-muted);">[SOURCE NEEDED]</span></td>
+            <td><span class="tag">Navcam</span><span class="tag">Pancam</span><span class="tag">Fluorescence</span></td>
+            <td><a href="#">Browse</a> · <a href="#">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href="../expeditions/2013.html">2013</a></td>
+            <td><span style="color:var(--text-muted);">[SOURCE NEEDED]</span></td>
+            <td><span class="tag">Navcam</span><span class="tag">Pancam</span><span class="tag">Fluorescence</span><span class="tag">Raman</span></td>
+            <td><a href="#">Browse</a> · <a href="#">Download</a></td>
+          </tr>
+          <tr>
+            <td><a href="../expeditions/2015-2018.html">2015–2018</a></td>
+            <td><span style="color:var(--text-muted);">[SOURCE NEEDED]</span></td>
+            <td><span class="tag">Navcam</span><span class="tag">Pancam</span><span class="tag">Fluorescence</span><span class="tag">Raman</span></td>
+            <td><a href="#">Browse</a> · <a href="#">Download</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p style="margin-top:1rem;font-size:0.85rem;color:var(--text-muted);">
+        Full-resolution images hosted externally. 
+        <a href="#">Image format and metadata documentation →</a>
+      </p>
+    </div>
+
+    <!-- Panoramas -->
+    <div id="panoramas" class="archive-section observe">
+      <h2>Panoramic Mosaics</h2>
+      <p>
+        At key waypoints, Zoë's cameras swept through overlapping positions to 
+        capture full panoramas — some covering a complete 360 degrees. These 
+        were computationally stitched into high-resolution mosaics that scientists 
+        use to study landscape structure, geology, and life distribution.
+      </p>
+      <p>
+        Each panorama below links to a zoomable full-resolution viewer. 
+        Raw tile sets and source images are available for download.
+      </p>
+      <div class="gallery-grid observe" style="grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); margin-top:1.5rem;">
+        <div class="gallery-item" style="position:relative;">
+          <div class="img-placeholder" data-label="Panorama — 2005 Yungay" style="width:100%;height:100%;"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:0.75rem;background:rgba(0,0,0,0.6);color:#fff;font-size:0.75rem;">2005 · Yungay Basin · 360°</div>
+        </div>
+        <div class="gallery-item" style="position:relative;">
+          <div class="img-placeholder" data-label="Panorama — 2013" style="width:100%;height:100%;"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:0.75rem;background:rgba(0,0,0,0.6);color:#fff;font-size:0.75rem;">2013 · [Location] · [FOV]</div>
+        </div>
+        <div class="gallery-item" style="position:relative;">
+          <div class="img-placeholder" data-label="Panorama — 2015" style="width:100%;height:100%;"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:0.75rem;background:rgba(0,0,0,0.6);color:#fff;font-size:0.75rem;">2015 · [Location] · [FOV]</div>
+        </div>
+        <div class="gallery-item" style="position:relative; display:flex; align-items:center; justify-content:center; background:var(--accent-salt);">
+          <div style="text-align:center;padding:1rem;">
+            <div style="font-family:var(--font-display);font-size:2rem;color:var(--accent-ochre);">200+</div>
+            <div style="font-size:0.8rem;color:var(--text-muted);">panoramas total</div>
+            <a href="#" style="display:block;margin-top:0.5rem;font-size:0.8rem;">Browse all →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Instrument Data -->
+    <div id="instruments" class="archive-section observe">
+      <h2>Instrument Data</h2>
+      <p>
+        Each instrument on Zoë produced a data stream correlated to GPS position 
+        and timestamp. Instrument datasets are provided as calibrated data products 
+        with accompanying metadata and README files.
+      </p>
+
+      <div class="grid-3" style="margin-top:2rem;">
+        <div class="card">
+          <div class="card-body">
+            <span class="card-eyebrow">Life Detection</span>
+            <h3>Fluorescence Imager</h3>
+            <p>Images and signal intensity readings. Correlated to GPS traverse 
+            coordinates. Available for all five deployments.</p>
+            <p style="font-size:0.8rem;"><span class="archive-table tag">TIFF</span> <span class="archive-table tag">CSV</span></p>
+            <a href="#" class="btn btn-primary" style="font-size:0.8rem;padding:0.5rem 1rem;">Browse Data</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <span class="card-eyebrow">Mineralogy</span>
+            <h3>Spectrometers</h3>
+            <p>Infrared and Raman spectra from surface and subsurface samples. 
+            Includes calibration data and mineral identification results.</p>
+            <p style="font-size:0.8rem;"><span class="archive-table tag">CSV</span> <span class="archive-table tag">JSON</span></p>
+            <a href="#" class="btn btn-primary" style="font-size:0.8rem;padding:0.5rem 1rem;">Browse Data</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <span class="card-eyebrow">Subsurface · 2013–2018</span>
+            <h3>Drill Samples</h3>
+            <p>Sample provenance (depth, position, date), drill logs, and associated 
+            instrument readings for all autonomous drilling operations.</p>
+            <p style="font-size:0.8rem;"><span class="archive-table tag">CSV</span> <span class="archive-table tag">JSON</span></p>
+            <a href="#" class="btn btn-primary" style="font-size:0.8rem;padding:0.5rem 1rem;">Browse Data</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Traverse Logs -->
+    <div id="traverse-logs" class="archive-section observe">
+      <h2>Traverse Logs &amp; Navigation Data</h2>
+      <p>
+        GPS tracks, autonomous navigation logs, and waypoint records from all 
+        five deployments. Provided in standard GIS formats for use with 
+        QGIS, ArcGIS, Google Earth, and other tools.
+      </p>
+      <table class="archive-table mt-2">
+        <thead>
+          <tr>
+            <th>Deployment</th>
+            <th>Total Distance</th>
+            <th>Formats</th>
+            <th>Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2003</td>
+            <td>[SOURCE NEEDED]</td>
+            <td><span class="tag">GeoJSON</span><span class="tag">KML</span></td>
+            <td><a href="#">Download</a></td>
+          </tr>
+          <tr>
+            <td>2004</td>
+            <td>[SOURCE NEEDED]</td>
+            <td><span class="tag">GeoJSON</span><span class="tag">KML</span></td>
+            <td><a href="#">Download</a></td>
+          </tr>
+          <tr>
+            <td>2005</td>
+            <td>~180 km planned</td>
+            <td><span class="tag">GeoJSON</span><span class="tag">KML</span><span class="tag">Shapefile</span></td>
+            <td><a href="#">Download</a></td>
+          </tr>
+          <tr>
+            <td>2013</td>
+            <td>30–50 km</td>
+            <td><span class="tag">GeoJSON</span><span class="tag">KML</span><span class="tag">Shapefile</span></td>
+            <td><a href="#">Download</a></td>
+          </tr>
+          <tr>
+            <td>2015–2018</td>
+            <td>[SOURCE NEEDED]</td>
+            <td><span class="tag">GeoJSON</span><span class="tag">KML</span><span class="tag">Shapefile</span></td>
+            <td><a href="#">Download</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Bulk Downloads -->
+    <div id="downloads" class="archive-section observe">
+      <h2>Bulk Downloads &amp; Citation</h2>
+      <div class="grid-2" style="gap:3rem;">
+        <div>
+          <h3>Accessing the archive</h3>
+          <p>
+            Large datasets (image archives, raw instrument data) are hosted 
+            on Zenodo with permanent DOIs for citation in published research. 
+            Curated subsets are available directly from this site.
+          </p>
+          <p>
+            [PLACEHOLDER: Zenodo DOI links for each deployment dataset, 
+            to be added when data is deposited]
+          </p>
+          <a href="#" class="btn btn-primary">Browse on Zenodo</a>
+        </div>
+        <div>
+          <h3>How to cite</h3>
+          <p>If you use LITA data in published research, please cite:</p>
+          <blockquote style="font-family:var(--font-mono);font-size:0.8rem;font-style:normal;background:var(--accent-salt);padding:1rem;border-left:3px solid var(--accent-ochre);">
+            [PLACEHOLDER: Citation format for the project and individual 
+            deployment datasets — to be established with Zenodo deposit]
+          </blockquote>
+          <p style="margin-top:1rem;font-size:0.875rem;">
+            <a href="#">→ All LITA publications</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© Life in the Atacama Project · Carnegie Mellon University Robotics Institute</span>
+      <a href="../../index.html" style="color:rgba(240,237,232,0.4);">← Home</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/js/shared.js"></script>
+</body>
+</html>
