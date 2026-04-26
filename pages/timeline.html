@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Timeline — Life in the Atacama</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .tl-wrap { max-width: 760px; }
+    .tl-entry { display:grid; grid-template-columns:130px 20px 1fr; gap:0 1.5rem; }
+    .tl-date { text-align:right; padding-top:0.15rem; }
+    .tl-spine { display:flex; flex-direction:column; align-items:center; }
+    .tl-dot { width:14px; height:14px; border-radius:50%; flex-shrink:0; margin-top:0.15rem; }
+    .tl-dot-f { background:var(--accent-ochre); }
+    .tl-dot-m { background:var(--accent-blue); }
+    .tl-dot-s { background:var(--accent-green); }
+    .tl-dot-lg { width:18px; height:18px; margin-left:-2px; }
+    .tl-line { width:2px; flex:1; min-height:1.5rem; }
+    .tl-line-p1 { background:rgba(196,130,42,0.25); }
+    .tl-line-p2 { background:rgba(42,95,165,0.25); }
+    .tl-body { padding-bottom:2.5rem; }
+    .tl-body h3 { font-size:1.15rem; margin-bottom:0.35rem; }
+    .tl-body p { font-size:0.9rem; color:var(--text-muted); max-width:62ch; margin-bottom:0.5rem; }
+    .tl-badge { font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; padding:0.25rem 0.6rem; display:inline-block; margin-bottom:0.5rem; }
+    .badge-f { background:rgba(196,130,42,0.12); color:var(--accent-ochre); }
+    .badge-m { background:rgba(42,95,165,0.1); color:var(--accent-blue); }
+    .badge-s { background:rgba(58,125,68,0.12); color:var(--accent-green); }
+    .tl-team { font-family:var(--font-mono); font-size:0.7rem; color:var(--text-muted); background:var(--accent-salt); padding:0.4rem 0.75rem; margin-top:0.25rem; display:block; }
+    .phase-bar { margin:2.5rem 0 1.5rem; padding:0.75rem 1.25rem; display:flex; align-items:center; gap:1rem; }
+    .phase-bar-p1 { background:rgba(196,130,42,0.07); border-left:3px solid var(--accent-ochre); }
+    .phase-bar-p2 { background:rgba(42,95,165,0.07); border-left:3px solid var(--accent-blue); }
+    .gap-note { margin:0 0 2rem calc(130px + 1.5rem + 10px); padding:1rem 1.5rem; border-left:2px dashed var(--border); color:var(--text-muted); font-family:var(--font-mono); font-size:0.75rem; }
+    .day-table { font-size:0.82rem; margin:0.75rem 0 1rem; }
+    .day-table td { padding:0.35rem 0.5rem; border-bottom:1px solid var(--border); vertical-align:top; }
+    .day-table td:first-child { white-space:nowrap; font-family:var(--font-mono); font-size:0.72rem; color:var(--text-muted); width:110px; }
+  </style>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container">
+    <a href="../index.html" class="nav-logo">LITA <span>·</span> Life in the Atacama</a>
+    <ul class="nav-links">
+      <li><a href="atacama/index.html">The Desert</a></li>
+      <li><a href="zoe/index.html">Meet Zoë</a></li>
+      <li><a href="expeditions/index.html">Expeditions</a></li>
+      <li><a href="gallery/index.html">Gallery</a></li>
+      <li><a href="archive/index.html">Archive</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-hero" style="height:320px;">
+  <div class="page-hero-bg" style="background-color:#1E1E20;"></div>
+  <div class="container page-hero-content">
+    <span class="section-label">Chronology</span>
+    <h1>Project Timeline</h1>
+    <p class="lead">From the first NASA award in 2002 to the final field deployment in 2015 — a chronological record across two funded phases.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container tl-wrap">
+
+    <!-- Legend -->
+    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:2.5rem;" class="observe">
+      <div style="display:flex;align-items:center;gap:0.5rem;"><div class="tl-dot tl-dot-f"></div><span style="font-size:0.85rem;">Field deployment</span></div>
+      <div style="display:flex;align-items:center;gap:0.5rem;"><div class="tl-dot tl-dot-m"></div><span style="font-size:0.85rem;">Project milestone</span></div>
+      <div style="display:flex;align-items:center;gap:0.5rem;"><div class="tl-dot tl-dot-s"></div><span style="font-size:0.85rem;">Scientific result / legacy</span></div>
+    </div>
+
+    <!-- PHASE 1 -->
+    <div class="phase-bar phase-bar-p1 observe">
+      <span class="tl-badge badge-f">Phase 1</span>
+      <div><strong style="font-family:var(--font-display);font-size:1.15rem;">2002 – 2006</strong>
+      <span style="margin-left:1rem;font-size:0.875rem;color:var(--text-muted);">Surface life survey · Autonomous navigation · NASA ASTEP</span></div>
+    </div>
+
+    <!-- 2002 -->
+    <div class="tl-entry observe">
+      <div class="tl-date"><span class="section-label">2002</span></div>
+      <div class="tl-spine"><div class="tl-dot tl-dot-m"></div><div class="tl-line tl-line-p1"></div></div>
+      <div class="tl-body">
+        <span class="tl-badge badge-m">Milestone</span>
+        <h3>NASA ASTEP Award — project begins</h3>
+        <p>Life in the Atacama funded under NASA's Astrobiology Science and Technology for Exploring Planets program. CMU leads robotics; SETI Institute leads science. PI: David Wettergreen (CMU Robotics Institute); Science PI: Nathalie Cabrol (SETI / NASA Ames). [SOURCE NEEDED: exact date and grant number]</p>
+      </div>
+    </div>
+
+    <!-- 2003 -->
+    <div class="tl-entry observe">
+      <div class="tl-date"><span class="section-label">Apr 2003</span></div>
+      <div class="tl-spine"><div class="tl-dot tl-dot-f"></div><div class="tl-line tl-line-p1"></div></div>
+      <div class="tl-body">
+        <span class="tl-badge badge-f">Field Deployment 1</span>
+        <h3>Atacama Desert — Hyperion rover</h3>
+        <p>First LITA field campaign. The Hyperion rover is deployed in April 2003 to test instruments and navigation. Experiments include: VIS/NIR spectrometer, fluorescence microscopy, fluorescence imaging, stereo image processing, sun tracking, localization, locomotion power, and integrated rover operations. Camp established near Iquique. [SOURCE NEEDED: exact dates, field site GPS, traverse distance]</p>
+        <span class="tl-team">Team (17): Wettergreen, Teza, Wagner, Urmson, Calderon, Luders, Whittaker, Strelow, Tompkins, Verma, McBlain, Moersch, Waggoner, Smith, Wilke, Chong +1</span>
+        <p style="margin-top:0.75rem;"><a href="expeditions/2003.html">→ 2003 expedition page</a></p>
+      </div>
+    </div>
+
+    <!-- 2004 -->
+    <div class="tl-entry observe">
+      <div class="tl-date"><span class="section-label">Aug–Oct 2004</span></div>
+      <div class="tl-spine"><div class="tl-dot tl-dot-f"></div><div class="tl-line tl-line-p1"></div></div>
+      <div class="tl-body">
+        <span class="tl-badge badge-f">Field Deployment 2</span>
+        <h3>Atacama Desert — Zoë's first campaign</h3>
+        <p>Zoë replaces Hyperion as the primary platform. Deployed August–October 2004 to Sites B and C. Integrated instruments: fluorescence imager, VIS/NIR spectrometer, stereo panoramic imager, environmental sensors, and experimental instruments. Remote Pittsburgh science team operates in parallel. [SOURCE NEEDED: exact dates, traverse distances, key results]</p>
+        <span class="tl-team">Chile (~25): Wettergreen, Teza, Wagner, Villa, Jonak, Lüders, Moersch, Waggoner, Calderon, Heys, Pane, Smith, Thompson, Tompkins, Vijaykumar, Williams, Wyatt + observers</span>
+        <span class="tl-team" style="margin-top:0.2rem;">Pittsburgh science team: Cabrol, Bass, Coppin, Fischer, Glasgow, Grin + others</span>
+        <p style="margin-top:0.75rem;"><a href="expeditions/2004.html">→ 2004 expedition page</a></p>
+      </div>
+    </div>
+
+    <!-- 2005 -->
+    <div class="tl-entry observe">
+      <div class="tl-date"><span class="section-label">Aug–Oct 2005</span></div>
+      <div class="tl-spine"><div class="tl-dot tl-dot-f tl-dot-lg"></div><div class="tl-line tl-line-p1"></div></div>
+      <div class="tl-body">
+        <span class="tl-badge badge-f">Field Deployment 3 ★</span>
+        <h3>First Autonomous Life Map</h3>
+        <p>Zoë traverses Sites D, E, and F from late August through October 2005. Up to 15 engineers and scientists in Chile; ~17-person science team operates remotely from Pittsburgh in weekly sessions. First robot to autonomously map distribution of microbial life — detecting chlorophyll, DNA, and protein in Atacama soils. [SOURCE NEEDED: total traverse distance, exact detection results]</p>
+        <div class="go-deeper" style="margin:0.75rem 0 1rem;">
+          <div class="go-deeper-label">Scientific result</div>
+          <h4>Life detected and mapped autonomously</h4>
+          <ul>
+            <li>Chlorophyll, DNA, and protein detected in Atacama soils by Zoë</li>
+            <li>Life distribution shown to be patchy, tied to moisture microhabitats</li>
+            <li>Results presented at Lunar and Planetary Science Conference, March 2005</li>
+          </ul>
+        </div>
+        <span class="tl-team">Chile (up to 15): Wettergreen, Heys, Jonak, Pane, Ramirez, Smith, Teza, Thompson, Tompkins, Vijaykumar, Wagner, Williams + observers (Blatt, Hinds, Kumagai/IEEE, Roberts/NatGeo)</span>
+        <span class="tl-team" style="margin-top:0.2rem;">Pittsburgh (~17): Cabrol, Coppin, Warren-Rhodes, Weinstein, Piatek, Drake, Grin, Horton, Moersch + others</span>
+        <p style="margin-top:0.75rem;"><a href="expeditions/2005.html">→ 2005 expedition page</a></p>
+      </div>
+    </div>
+
+    <!-- 2006 -->
+    <div class="tl-entry observe">
+      <div class="tl-date"><span class="section-label">2006</span></div>
+      <div class="tl-spine"><div class="tl-dot tl-dot-m"></div><div class="tl-line tl-line-p1" style="opacity:0.3;"></div></div>
+      <div class="tl-body">
+        <span class="tl-badge badge-m">Milestone</span>
+        <h3>Phase 1 concludes</h3>
+        <p>Data analysis, publications, and project close-out. Zoë has accumulated hundreds of kilometers and thousands of hours of field operation across Chile, California, and Pennsylvania. [SOURCE NEEDED: final publications, project close-out date]</p>
+      </div>
+    </div>
+
+    <div class="gap-note observe">2007 &nbsp;·&nbsp; 2008 &nbsp;·&nbsp; 2009 &nbsp;·&nbsp; 2010 — gap between funded phases</div>
+
+    <!-- PHASE 2 -->
+    <div class="phase-bar phase-bar-p2 observe">
+      <span class="tl-badge badge-m">Phase 2</span>
+      <div><strong style="font-family:var(--font-display);font-size:1.15rem;">2011 – 2015</strong>
+      <span style="margin-left:1rem;font-size:0.875rem;color:var(--text-muted);">Subsurface life · Autonomous drilling · NASA ASTEP · NNX11AJ87G</span></div>
+    </div>
+
+    <!-- 2011 -->
+    <div class="tl-entry observe">
+      <div class="tl-date"><span class="section-label">2011</span></div>
+      <div class="tl-spine"><div class="tl-dot tl-dot-m"></div><div class="tl-line tl-line-p2"></div></div>
+      <div class="tl-body">
+        <span class="tl-badge badge-m">Milestone</span>
+        <h3>NASA ASTEP Award — Phase 2 begins</h3>
+        <p>New award (NNX11AJ87G) funds "Robotic Investigation of Subsurface Life in the Atacama Desert." Project sometimes referred to as Subsurface Life in the Atacama. Zoë is reconditioned. Honeybee Robotics begins developing the rover-deployed 1-meter drill (third generation Rotary-Percussive drill, following CRUX and IceBreaker). [SOURCE NEEDED: exact award date; Wettergreen's Laguna Negra/Atacama trips in 2011–12 referenced in experience record]</p>
+      </div>
+    </div>
+
+    <!-- 2012 -->
+    <div class="tl-entry observe">
+      <div class="tl-date"><span class="section-label">2012</span></div>
+      <div class="tl-spine"><div class="tl-dot tl-dot-f"></div><div class="tl-line tl-line-p2"></div></div>
+      <div class="tl-body">
+        <span class="tl-badge badge-f">Year 1 Field Season</span>
+        <h3>Component tests in Chile; rover integration in Pittsburgh</h3>
+        <p>Year 1 of Phase 2 focuses on independent component testing. Instrument and drill tests are performed in Chile while rover integration and performance testing occurs in Pittsburgh. Paulsen (Honeybee) tests drill in Greenland and Mojave (2012). MMRS (JPL flight prototype, first assembled 2004) reconditioned for field use. [SOURCE NEEDED: specific Chile test dates and locations for 2012]</p>
+        <span class="tl-team">Key personnel: Wettergreen, Paulsen (Honeybee), Yoon (Honeybee) + [SOURCE NEEDED: full 2012 team]</span>
+      </div>
+    </div>
+
+    <!-- 2013 -->
+    <div class="tl-entry observe">
+      <div class="tl-date"><span class="section-label">Jun–Jul 2013</span></div>
+      <div class="tl-spine"><div class="tl-dot tl-dot-f tl-dot-lg"></div><div class="tl-line tl-line-p2"></div></div>
+      <div class="tl-body">
+        <span class="tl-badge badge-f">Field Deployment 4 ★</span>
+        <h3>June 11 – July 1, 2013 · Mina Guanaco</h3>
+        <p>Zoë returns to the Atacama with the Honeybee drill and full instrument suite: MMRS (Raman), BUF (UV fluorescence), VNIR spectrometer. Base camp at Mina Guanaco operating gold mine, ~2700m elevation. Two science traverse windows of 5 days each. Team rotation mid-deployment.</p>
+        <table class="day-table">
+          <tr><td>Jun 11</td><td>Team arrives Antofagasta; visit university</td></tr>
+          <tr><td>Jun 12–13</td><td>Robot assembly, instrument install (MMRS, BUF), camera calibration</td></tr>
+          <tr><td>Jun 14</td><td>System operation; public outreach; prepare for field</td></tr>
+          <tr><td>Jun 15</td><td>Transport rover to Mina Guanaco; acclimatize</td></tr>
+          <tr><td>Jun 16</td><td>Rover checkout; position at landing site</td></tr>
+          <tr><td>Jun 17–21</td><td>Science traverse with drill sampling operations</td></tr>
+          <tr><td>Jun 22–23</td><td>Contingency science; team rotation (Teza/Kohanbash out, Foil/Wagner in)</td></tr>
+          <tr><td>Jun 24–29</td><td>Science traverse; ground truth collection; data upload</td></tr>
+          <tr><td>Jun 30–Jul 1</td><td>Pack equipment; transport rover; team departs</td></tr>
+        </table>
+        <div class="go-deeper" style="margin:0.5rem 0 1rem;">
+          <div class="go-deeper-label">Scientific result</div>
+          <h4>Salt-adapted subsurface microbes found</h4>
+          <ul>
+            <li>First autonomous rover drilling operation in the Atacama</li>
+            <li>Soil samples from ~1 m depth contain unusual, highly salt-adapted microbes</li>
+            <li>Organisms different from surface microbes; relevant to Martian subsurface conditions</li>
+            <li>Published: Frontiers of Microbiology, February 2019</li>
+          </ul>
+        </div>
+        <span class="tl-team">Wettergreen (PI), Teza/Wagner (deputy leads), Foil, Kohanbash, Vijayarangan (CMU); Paulsen, Yoon (Honeybee); Wei (Washington Univ.); Warren-Rhodes (SETI); Chong, Bijman, Gallardo (UCN); Arias (guide)</span>
+        <p style="margin-top:0.75rem;"><a href="expeditions/2013.html">→ 2013 expedition page</a></p>
+      </div>
+    </div>
+
+    <!-- 2014 -->
+    <div class="tl-entry observe">
+      <div class="tl-date"><span class="section-label">2014</span></div>
+      <div class="tl-spine"><div class="tl-dot tl-dot-m"></div><div class="tl-line tl-line-p2"></div></div>
+      <div class="tl-body">
+        <span class="tl-badge badge-m">Milestone</span>
+        <h3>Sample analysis, drill upgrade, rover reconfiguration</h3>
+        <p>Post-2013 microbial analysis underway. Drill upgraded for final deployment; Bryan Yaggi (Honeybee) joins as drill operator for 2015. Rover reconfigured for Year 3 operations. Wettergreen obtains Wilderness First Aid certification and mine safety training. [SOURCE NEEDED: additional 2014 milestones]</p>
+      </div>
+    </div>
+
+    <!-- 2015 -->
+    <div class="tl-entry observe">
+      <div class="tl-date"><span class="section-label">Mar–Apr 2015</span></div>
+      <div class="tl-spine"><div class="tl-dot tl-dot-f tl-dot-lg"></div><div class="tl-line tl-line-p2" style="opacity:0.3;"></div></div>
+      <div class="tl-body">
+        <span class="tl-badge badge-f">Field Deployment 5 ★</span>
+        <h3>March 26 – April 13, 2015 · Paranal Observatory</h3>
+        <p>Final LITA deployment. Base camp at ESO Paranal Observatory (~2300m), accessed from Antofagasta via Ruta 5 south then B-710. Science operations at Sites H and I. First fully autonomous rover-drill-instrument traverse with remote science team in Pittsburgh operating under a Mars-relevant scenario.</p>
+        <table class="day-table">
+          <tr><td>Mar 26</td><td>Antofagasta — arrange vehicles; visit UCN</td></tr>
+          <tr><td>Mar 27</td><td>Public outreach; safety briefing; field site selection</td></tr>
+          <tr><td>Mar 28</td><td>Travel to Paranal; receive cargo; acclimatize</td></tr>
+          <tr><td>Mar 29</td><td>Rover assembly and checkout; position at Site H</td></tr>
+          <tr><td>Mar 30–Apr 3</td><td>Science operations at Site H</td></tr>
+          <tr><td>Apr 4–5</td><td>Technology experiments; reposition to Site I</td></tr>
+          <tr><td>Apr 6–10</td><td>Science operations at Site I; ground truth collection</td></tr>
+          <tr><td>Apr 11</td><td>Contingency science; pack rover</td></tr>
+          <tr><td>Apr 12–13</td><td>Depart Paranal; team departs Chile</td></tr>
+        </table>
+        <span class="tl-team">Wettergreen, Teza, Wagner, Foil, Vijayarangan (CMU); Yaggi (Honeybee); Wei (Washington Univ.); Gallardo (Centro de Astrobiología); Chong (UCN); Arias (guide)</span>
+        <p style="margin-top:0.75rem;"><a href="expeditions/2015.html">→ 2015 expedition page</a></p>
+      </div>
+    </div>
+
+    <!-- Legacy -->
+    <div class="tl-entry observe">
+      <div class="tl-date"><span class="section-label">2015–2019</span></div>
+      <div class="tl-spine"><div class="tl-dot tl-dot-s"></div></div>
+      <div class="tl-body">
+        <span class="tl-badge badge-s">Legacy</span>
+        <h3>Publications and impact</h3>
+        <p>2013 microbial sample analyses published in Frontiers of Microbiology (February 2019). DAN neutron detector results from LITA led NASA to revise the operational timeline for the identical DAN instrument on the Curiosity rover. The Honeybee drill technology was subsequently used in the ARADS project — a separate NASA Ames-led project using the K-REX2 robot, not Zoë.</p>
+        <p><a href="#">→ Publications list</a></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© Life in the Atacama Project · Carnegie Mellon University Robotics Institute</span>
+      <a href="../index.html" style="color:rgba(240,237,232,0.4);">← Home</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/shared.js"></script>
+</body>
+</html>
